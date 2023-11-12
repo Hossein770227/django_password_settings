@@ -1,0 +1,9 @@
+{% extends "_base.html" %}
+{% block page_title %} sign up  {% endblock page_title %}
+{% block content %}
+    <form action= "" method="post" class="btn_btn mt-3">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-success mt-3">sign up</button>
+    </form>
+{% endblock content %}
